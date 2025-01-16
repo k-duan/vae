@@ -1,0 +1,5 @@
+torch
+torchvision
+tensorboard
+numpy<2
+pillow
