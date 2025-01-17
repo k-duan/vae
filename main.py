@@ -36,7 +36,7 @@ def main():
     dataloader = DataLoader(dataset=dataset, batch_size=64, shuffle=True, collate_fn=collate_mnist_fn)
     vae = VAE(input_size=784, z_dim=32, dropout=0)
     optimizer = torch.optim.AdamW(params=vae.parameters(), lr=1e-3, weight_decay=1e-4)
-    n_epochs = 10
+    n_epochs = 50
 
     i = 0
     for _ in range(n_epochs):
